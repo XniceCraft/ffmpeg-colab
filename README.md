@@ -8,7 +8,7 @@ Static FFmpeg 5.1.1 binary for Google Colab
 ### [=] Installation
 1. Clone this repository
 ```
-!git clone https://github.com/XniceCraft/ffmpeg-colab.git
+!git clone https://github.com/kacamataprogramming/ffmpeg-colab
 ```
 2. Change script permission to executable
 ```
