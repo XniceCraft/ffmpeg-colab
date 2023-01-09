@@ -33,4 +33,4 @@ jobs:
       - name: Test
         run: |
           wget https://file-examples.com/storage/feefe3d0dd63b5a899e4775/2017/04/file_example_MP4_1280_10MG.mp4
-          ffmpeg -i file_example_MP4_1280_10MG.mp4 -c:a libfdk-aac -b:a 192k -c:v libopenh264 -b:v 1000k hi.mp4
+          ffmpeg -i file_example_MP4_1280_10MG.mp4 -c:a libfdk_aac -b:a 192k -c:v libopenh264 -b:v 1000k hi.mp4
