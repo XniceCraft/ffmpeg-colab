@@ -1,0 +1,33 @@
+#!/bin/bash
+
+FFMPEGLOC=$(which ffmpeg)
+CURL_EXISTS=$(command -v "curl")
+WGET_EXISTS=$(command -v "wget")
+if [ -z $CURL_EXISTS ] && [ -z $WGET_EXISTS ]; then
+    echo "Please install either wget or curl"
+    exit 1
+fi
+
+if [ -z "$FFMPEGLOC" ]; then
+    echo "No FFmpeg found"
+else
+    echo "FFmpeg was found at "$FFMPEGLOC
+    echo "Removing old FFmpeg"
+    rm -rf $FFMPEGLOC
+    echo "Done"
+fi
+
+if [ ! -f "ffmpeg" ]; then
+    if [ $WGET_EXISTS ]; then
+        wget "https://github.com/kacamataprogramming/ffmpeg-colab/releases/download/5.1.1/ffmpeg" -O ffmpeg
+    elif [ $CURL_EXISTS ]; then
+        curl -o ffmpeg "https://github.com/kacamataprogramming/ffmpeg-colab/releases/download/5.1.1/ffmpeg"
+    fi
+fi
+
+if [ -f "ffmpeg" ]; then
+    echo "Moving new ffmpeg to /usr/bin"
+    chmod +x ffmpeg
+    mv ffmpeg /usr/bin/
+    echo "FFmpeg was successfully installed"
+fi
