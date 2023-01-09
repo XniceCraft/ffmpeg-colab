@@ -28,6 +28,13 @@ fi
 if [ -f "ffmpeg" ]; then
     echo "Moving new ffmpeg to /usr/bin"
     chmod +x ffmpeg
-    mv ffmpeg /usr/bin/
+    if [ $(mv ffmpeg "/usr/bin/") ]; then
+        echo "Failed move ffmpeg to /usr/bin"
+        echo "Moving new ffmpeg to /usr/local/bin"
+        if [ $(mv ffmpeg "/usr/local/bin/") ]; then
+            echo "Installation failed. Please check your permission"
+            exit 1
+        fi
+    fi
     echo "FFmpeg was successfully installed"
 fi
