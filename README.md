@@ -8,7 +8,7 @@ Static FFmpeg 5.1.1 binary for Google Colab
 ### [=] Installation
 1. Clone this repository
 ```
-!git clone https://github.com/kacamataprogramming/ffmpeg-colab
+!git clone https://github.com/XniceCraft/ffmpeg-colab
 ```
 2. Change script permission to executable
 ```
@@ -68,3 +68,35 @@ https://github.com/kacamataprogramming/ffmpeg-builder
 ```
 CFLAGS="-mtune=generic" python ffmpeg-builder.py --use-system-build-tools --use-nonfree-libs --static-ffmpeg --exclude-targets "ffmpeg-msys2-deps" --disable-ffplay --extra-ffmpeg-args="--enable-nvenc --enable-nvdec --enable-cuvid" --build
 ```
+
+### [=] Credit
+* <a href="https://aomedia.googlesource.com/aom/">libaom</a>
+* <a href="https://github.com/libass/libass">libass</a>
+* <a href="https://www.videolan.org/developers/libbluray.html">libbluray</a>
+* <a href="https://code.videolan.org/videolan/dav1d">libdav1d</a>
+* <a href="https://github.com/mstorsjo/fdk-aac">libfdk-aac</a>
+* <a href="https://www.freedesktop.org/wiki/Software/fontconfig/">libfontconfig</a>
+* <a href="http://freetype.org/">libfreetype</a>
+* <a href="https://github.com/fribidi/fribidi">libfribidi</a>
+* <a href="https://bitbucket.org/mpyne/game-music-emu/wiki/Home">libgme</a>
+* <a href="https://github.com/ultravideo/kvazaar">libkvazaar</a>
+* <a href="https://lame.sourceforge.io/">libmp3lame</a> <a href="https://github.com/openstreamcaster/lame">custom</a>
+* <a href="https://sourceforge.net/projects/opencore-amr/">libopencore</a>
+* <a href="https://github.com/cisco/openh264">libopenh264</a>
+* <a href="https://www.openjpeg.org/">libopenjpeg</a>
+* <a href="https://opus-codec.org/">libopus</a>
+* <a href="https://github.com/toots/shine">libshine</a>
+* <a href="https://github.com/chirlu/soxr">libsoxr</a>
+* <a href="https://github.com/Haivision/srt">libsrt</a>
+* <a href="https://gitlab.com/AOMediaCodec/SVT-AV1">libsvtav1</a>
+* <a href="https://www.theora.org/">libtheora</a>
+* <a href="https://github.com/georgmartius/vid.stab">libvidstab</a>
+* <a href="https://github.com/Netflix/vmaf">libvmaf</a>
+* <a href="https://xiph.org/vorbis/">libvorbis</a>
+* <a href="https://chromium.googlesource.com/webm/libvpx">libvpx</a>
+* <a href="https://www.videolan.org/developers/x264.html">libx264</a>
+* <a href="https://bitbucket.org/multicoreware/x265_git/wiki/Home">libx265</a>
+* <a href="https://www.xvid.com/">libxvid</a>
+* <a href="https://github.com/sekrit-twc/zimg">libzimg</a>
+* <a href="https://www.openssl.org/">openssl</a>
+* <a href="https://www.zlib.net/">zlib</a>
