@@ -63,7 +63,7 @@ NVENC and NVDEC are supported.
 ```
 
 ### [=] Builder Script
-https://github.com/kacamataprogramming/ffmpeg-builder
+https://github.com/XniceCraft/ffmpeg-builder
 
 ```
 CFLAGS="-mtune=generic" python ffmpeg-builder.py --use-system-build-tools --use-nonfree-libs --static-ffmpeg --exclude-targets "ffmpeg-msys2-deps" --disable-ffplay --extra-ffmpeg-args="--enable-nvenc --enable-nvdec --enable-cuvid" --build
