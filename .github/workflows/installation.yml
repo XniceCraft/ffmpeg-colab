@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Clone this repo
-        run: git clone https://github.com/XniceCraft/ffmpeg-colab
+        run: git clone https://github.com/XniceCraft/ffmpeg-colab --depth 1
 
       - name: Install the ffmpeg
         run: |
