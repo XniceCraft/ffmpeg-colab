@@ -19,9 +19,9 @@ fi
 
 if [ ! -f "ffmpeg" ]; then
     if [ $WGET_EXISTS ]; then
-        wget "https://github.com/kacamataprogramming/ffmpeg-colab/releases/download/5.1.1/ffmpeg" -O ffmpeg
+        wget "https://github.com/XniceCraft/ffmpeg-colab/releases/download/5.1.1/ffmpeg" -O ffmpeg
     elif [ $CURL_EXISTS ]; then
-        curl -o ffmpeg "https://github.com/kacamataprogramming/ffmpeg-colab/releases/download/5.1.1/ffmpeg"
+        curl -o ffmpeg "https://github.com/XniceCraft/ffmpeg-colab/releases/download/5.1.1/ffmpeg"
     fi
 fi
 
