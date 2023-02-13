@@ -21,5 +21,5 @@ jobs:
 
       - name: Test
         run: |
-          wget http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
-          ffmpeg -i BigBuckBunny.mp4 -c:a libfdk_aac -b:a 192k -c:v libopenh264 -b:v 1000k hi.mp4
+          wget http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4
+          ffmpeg -i ForBiggerBlazes.mp4 -c:a libfdk_aac -b:a 192k -c:v libopenh264 -b:v 1000k hi.mp4
