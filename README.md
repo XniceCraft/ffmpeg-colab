@@ -4,7 +4,7 @@
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" style="width: 20px; height: 20px;">
 <div>
 FFmpeg 6.0 binary for Google Colab
-This FFmpeg depends on opengl. So it isn't static library
+This FFmpeg depends on opengl. So it isn't static binary
 
 ### [=] Installation
 1. Clone this repository
