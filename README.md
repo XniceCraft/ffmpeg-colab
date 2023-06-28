@@ -1,9 +1,10 @@
-# FFmpeg 5.1.1
+# FFmpeg 6.0
 <div style="display: inline">
 <img src="https://icon-library.com/images/ffmpeg-icon/ffmpeg-icon-20.jpg" style="width: 20px; height: 20px;">
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" style="width: 20px; height: 20px;">
 <div>
-Static FFmpeg 5.1.1 binary for Google Colab
+FFmpeg 6.0 binary for Google Colab
+This FFmpeg depends on opengl. So it isn't static library
 
 ### [=] Installation
 1. Clone this repository
@@ -24,8 +25,8 @@ After installation you can remove the folder.
 
 ### [=] External Library
 * ffnvcodec 11.1.5.2
-* libaom 3.5.0
-* libass 0.17.0
+* libaom 3.6.1
+* libass 0.17.1
 * libbluray 1.3.3
 * libdav1d 1.0.0
 * libfdk-aac 2.0.2
@@ -37,7 +38,7 @@ After installation you can remove the folder.
 * libmp3lame 3.100~ (<a href="https://github.com/openstreamcaster/lame">custom</a>)
 * libopencore 0.1.6
 * libopenh264 2.3.1
-* libopenjpeg 2.5.1
+* libopenjpeg 2.5.0
 * libopus 1.3.1
 * libshine 3.1.1
 * libsoxr 0.1.3
