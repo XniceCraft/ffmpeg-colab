@@ -7,19 +7,9 @@ FFmpeg 6.0 binary for Google Colab
 This FFmpeg depends on opengl. So it isn't static binary
 
 ### [=] Installation
-1. Clone this repository
 ```
-!git clone https://github.com/XniceCraft/ffmpeg-colab --depth 1
+!!bash <(curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install)
 ```
-2. Change script permission to executable
-```
-!chmod +x ./ffmpeg-colab/install
-```
-3. Install with provided script
-```
-!./ffmpeg-colab/install
-```
-4. Done
 
 After installation you can remove the folder.
 
