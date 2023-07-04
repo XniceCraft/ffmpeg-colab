@@ -8,7 +8,7 @@ This FFmpeg depends on opengl. So it isn't static binary
 
 ### [=] Installation
 ```
-!!bash <(curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install)
+!bash <(curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install)
 ```
 
 After installation you can remove the folder.
