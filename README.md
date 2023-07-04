@@ -11,8 +11,6 @@ This FFmpeg depends on opengl. So it isn't static binary
 !bash <(curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install)
 ```
 
-After installation you can remove the folder.
-
 ### [=] External Library
 * ffnvcodec 11.1.5.2
 * libaom 3.6.1
