@@ -1,9 +1,9 @@
-# FFmpeg 6.0
+# FFmpeg 7.1
 <div style="display: inline">
 <img src="https://icon-library.com/images/ffmpeg-icon/ffmpeg-icon-20.jpg" style="width: 20px; height: 20px;">
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" style="width: 20px; height: 20px;">
 <div>
-FFmpeg 7.0 binary for Google Colab
+FFmpeg 7.1 binary for Google Colab
 This FFmpeg depends on opengl.
 
 ### [=] Installation

@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone this repo
-        run: git clone https://github.com/XniceCraft/ffmpeg-colab --depth 1
-
       - name: Install the ffmpeg
         run: |
+          bash <(curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install)
           chmod +x ./ffmpeg-colab/install
           ./ffmpeg-colab/install
 
