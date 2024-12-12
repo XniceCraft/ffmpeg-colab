@@ -3,8 +3,8 @@
 <img src="https://icon-library.com/images/ffmpeg-icon/ffmpeg-icon-20.jpg" style="width: 20px; height: 20px;">
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" style="width: 20px; height: 20px;">
 <div>
-FFmpeg 6.0 binary for Google Colab
-This FFmpeg depends on opengl. So it isn't static binary
+FFmpeg 7.0 binary for Google Colab
+This FFmpeg depends on opengl.
 
 ### [=] Installation
 ```
@@ -12,50 +12,50 @@ This FFmpeg depends on opengl. So it isn't static binary
 ```
 
 ### [=] External Library
-* ffnvcodec 11.1.5.2
-* libaom 3.6.1
-* libass 0.17.1
-* libbluray 1.3.3
-* libdav1d 1.0.0
-* libfdk-aac 2.0.2
-* libfontconfig 2.14.1
-* libfreetype 2.12.1
-* libfribidi 1.0.12
+* ffnvcodec 11.1.5.3
+* libaom 3.11.0
+* libass 0.17.3
+* libbluray 1.3.4
+* libdav1d 1.5.0
+* libfdk-aac 2.0.3
+* libfontconfig 2.15.0
+* libfreetype 2.13.3
+* libfribidi 1.0.16
 * libgme 0.6.3
-* libkvazaar 2.1.0
+* libkvazaar 2.3.1
 * libmp3lame 3.100~ (<a href="https://github.com/openstreamcaster/lame">custom</a>)
 * libopencore 0.1.6
 * libopenh264 2.3.1
-* libopenjpeg 2.5.0
-* libopus 1.3.1
+* libopenjpeg 2.5.3
+* libopus 1.5.2
 * libshine 3.1.1
 * libsoxr 0.1.3
-* libsrt 1.5.1
-* libsvtav1 1.3.0
+* libsrt 1.5.
+* libsvtav1 2.3.0
 * libtheora 1.1.1
 * libvidstab 1.1.0
 * libvmaf 2.3.1
 * libvorbis 1.3.7
 * libvpx 1.12.0
 * libx264 (see <a href="https://code.videolan.org/videolan/x264/-/tree/stable">x264-stable</a> branch) 
-* libx265 3.5
+* libx265 4.1
 * libxvid 1.3.7
-* libzimg 3.0.4
-* openssl 1.1.1s
-* zlib 1.2.13
+* libzimg 3.0.5
+* openssl 1.1.1w
+* zlib 1.3.1
 
 NVENC and NVDEC are supported.
 
 ### [=] FFmpeg Configuration
 ```
-./configure --prefix=/home/ffmpeg-builder/release --pkg-config-flags=--static --extra-libs=-lm --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages --disable-debug --disable-shared --disable-ffprobe --enable-static --enable-gpl --enable-version3 --enable-runtime-cpudetect --enable-avfilter --enable-filters --enable-nvenc --enable-nvdec --enable-cuvid --pkgconfigdir=/home/ffmpeg-builder/release/lib/pkgconfig --extra-cflags='-I/home/ffmpeg-builder/release/include -static -static-libstdc++ -static-libgcc ' --extra-ldflags='-L/home/ffmpeg-builder/release/lib -fstack-protector -static -static-libstdc++ -static-libgcc ' --extra-cxxflags='-static -static-libstdc++ -static-libgcc ' --extra-libs='-ldl -lrt -lpthread' --enable-ffnvcodec --enable-gmp --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfdk-aac --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libkvazaar --enable-libmp3lame --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtheora --enable-libvidstab --ld=g++ --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg --enable-openssl --enable-zlib --enable-nonfree --extra-libs=-lpthread --enable-pthreads --extra-libs=-lgomp
+configuration: --prefix=/home/ffmpeg-builder/release --pkg-config-flags=--static --extra-libs=-lm --disable-doc --disable-debug --disable-shared --disable-ffprobe --enable-static --enable-gpl --enable-version3 --enable-runtime-cpudetect --enable-avfilter --enable-filters --ld=g++ --enable-nvenc --enable-nvdec --enable-cuvid --toolchain=hardened --disable-stripping --enable-opengl --pkgconfigdir=/home/ffmpeg-builder/release/lib/pkgconfig --extra-cflags='-I/home/ffmpeg-builder/release/include -static -static-libstdc++ -static-libgcc ' --extra-ldflags='-L/home/ffmpeg-builder/release/lib -fstack-protector -Wl,--allow-multiple-definition -static-libstdc++ -static-libgcc ' --extra-cxxflags='-static -static-libstdc++ -static-libgcc ' --extra-ldexeflags='-static-libstdc++ -static-libgcc ' --extra-libs='-ldl -lrt -lpthread' --enable-ffnvcodec --enable-gmp --enable-libaom --enable-libass --enable-libbluray --enable-libdav1d --enable-libfdk-aac --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libkvazaar --enable-libmp3lame --enable-libopus --enable-libopencore_amrnb --enable-libopencore_amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libshine --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg --enable-openssl --enable-zlib --enable-nonfree --extra-libs=-lpthread --enable-pthreads --extra-libs=-lgomp
 ```
 
 ### [=] Builder Script
 https://github.com/XniceCraft/ffmpeg-builder
 
 ```
-CFLAGS="-mtune=generic" python ffmpeg-builder.py --use-system-build-tools --use-nonfree-libs --static-ffmpeg --exclude-targets "ffmpeg-msys2-deps" --disable-ffplay --extra-ffmpeg-args="--enable-nvenc --enable-nvdec --enable-cuvid --toolchain=hardened --disable-stripping --enable-opengl " --build
+CFLAGS="-mtune=generic" python build.py --use-system-build-tools --use-nonfree-libs --static-ffmpeg --exclude-targets "ffmpeg-msys2-deps" --disable-ffplay --extra-ffmpeg-args="--enable-nvenc --enable-nvdec --enable-cuvid --toolchain=hardened --disable-stripping --enable-opengl " --build
 ```
 
 ### [=] Credit
