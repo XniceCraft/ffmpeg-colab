@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Install the ffmpeg
         run: |
-          curl -s https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install
+          curl https://raw.githubusercontent.com/XniceCraft/ffmpeg-colab/master/install -o install
           chmod +x ./install
           ./install
 
